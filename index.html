@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>購物網站版型</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  
+    <style>
+        .header-carousel-item{
+            height: 450px;
+        }
+        .bg-cover{
+            background-size: cover;
+            background-position: center center;
+        }
+        .carousel-caption{
+            background-color: rgba(0, 0,0, .6);
+        }
+        .form-control{
+            border-width: 3px;
+        }
+        @media(min-width:768px){
+            .text-md-dark{
+                color: #333;
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fa fa-heart text-info" aria-hidden="true"></i>
+            <span style="color: slateblue;">Cashmere旗舰店</span></a>
+          <div class="navbar-nav d-flex">
+              <a class="nav-item nav-link active" href="./商务控制台.html">商务控制台<span class="sr-only">(current)</span></a>
+          </div>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" type="button" 
+            id="dropdownMenuButton" data-toggle="dropdown" 
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+            <span class="badge badge-pill badge-danger">2</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right p-2" style="min-width:300px;" 
+            aria-labelledby="dropdownMenuButton">
+                <table class="table table-sm">
+                    <h6 class="mb-3 pt-2">已选择商品</h6>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <a href="#removeModal" class="text-muted" data-toggle="modal" data-target="#removeModal" 
+                                data-title="删除 保暖针织帽 1件" data-backdrop="static">
+                                    <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td class="align-middle">保暖针织帽</td>
+                            <td class="align-middle">1件</td>
+                            <td class="align-middle text-right">￥420</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <a href="#removeModal" class="text-muted" data-toggle="modal" data-target="#removeModal" 
+                                data-title="删除 针织毛线帽 2件" data-backdrop="static">
+                                    <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td class="align-middle">针织毛线帽</td>
+                            <td class="align-middle">2件</td>
+                            <td class="align-middle text-right">￥620</td>
+                        </tr>
+                    </tbody>
+                </table>   
+                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" 
+                data-target="#editModal" data-title="" 
+                data-backdrop="static">购物车结账</a>
+            </div>
+        </div>
+    </nav>
+      <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item header-carousel-item bg-cover active"
+                    style="background-image:url(https://gdp.alicdn.com/imgextra/i4/1638449188/O1CN01WO47o02Hk9iLmcaw3_!!1638449188.jpg)">
+                      <div class="carousel-caption d-none d-md-block px-3">
+                          <h3>春夏流行款 大家都爱的日系小礼帽</h3>
+                          <p>遮阳草帽时尚平顶帽复古礼帽平沿太阳帽</p>
+                      </div> 
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover"
+                    style="background-image:url(https://gdp.alicdn.com/imgextra/i4/1638449188/O1CN01eYd88x2Hk9iUMsTbr_!!1638449188.jpg)">
+                      <div class="carousel-caption d-none d-md-block px-3">
+                          <h3>防晒遮阳草帽太阳帽草编渔夫帽夏季透气文艺可折叠帽子女</h3>
+                          <p>我们不一样 轻盈进口定制材料 更柔软有光泽</p>
+                      </div> 
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover"
+                    style="background-image:url(https://gdp.alicdn.com/imgextra/i2/1638449188/O1CN01DFzMWJ2Hk9iTqFAuF_!!1638449188.jpg)">
+                      <div class="carousel-caption d-none d-md-block px-3">
+                          <h3>日本亚麻贝雷帽夏季薄款女画家帽八角帽女韩版日系蓓蕾帽</h3>
+                          <p>日本亚麻编织 柔软又有筋骨
+                        </p>
+                      </div> 
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+      </header>
+  
+      
+    </div>
+</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top">
+                    <a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list">
+                        <i class="fab fa-old-republic mr-2"></i>金牌专卖店
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" data-toggle="list">
+                        <i class="fas fa-gift mr-2"></i>618专区
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-rainbow mr-2"></i>柔软舒适
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-dog mr-2"></i>纯羊毛帽
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action disabled">
+                        <i class="fas fa-home mr-2"></i>休闲毡帽
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="pane-1">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input type="search" class="form-control col-md-4 col-9 rounded-0" placeholder="search" aria-label="Search">
+                            <button class="btn btn-outline-warning my-2 my-sm-0 rounded-0" type="submit">search</button>
+                        </form>
+                        <div class="row mt-2 mt-md-4 mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <a href=".\商品详情页.html"><img class="card-img-top" src="https://img.alicdn.com/imgextra/i1/1079051120/O1CN010lSS5K1K909jAR7OE_!!1079051120-0-daren.jpg_250x250xz.jpg" alt="card image cap"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Pure Cashmere 针织毛线帽</h5>
+                                        <p class="card-text">“精致的针织毛线帽，简约的净色减少搭配烦恼，还有可拆卸毛球的设计，让帽尖显得圆润靓丽。而时尚的抽条纹设计，个性时尚超显脸！”</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">棕绒原色</a>
+                                            <a href="#" class="btn btn-outline-secondary disabled">藏雪白色</a>
+                                            <a href="#" class="btn btn-outline-secondary">花纱靛紫</a>
+                                            <a href="#" class="btn btn-outline-secondary">淡雅粉红</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" 
+                                    src="https://img.alicdn.com/imgextra/i1/2826164613/O1CN01rKQO0o1jwnhL2lpqD_!!2826164613-0-beehive-scenes.jpg_250x250xz.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            保暖加厚羊绒帽子脖套一体
+ </h5>
+                                        <p class="card-text">“采用了帽子和围巾的一体式的设计，不仅舒适保暖，也给你带来了更有趣的造型，既温暖又舒适耐穿，抽绳装饰设计，可以根据头型调节帽子宽松度，简简单单的纯色，非常的纯净。”</p>
+                                    </div>
+                                    <div class="card-footer bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">棕绒原色</a>
+                                            <a href="#" class="btn btn-outline-secondary ">藏雪白色</a>
+                                            <a href="#" class="btn btn-outline-secondary">花纱靛紫</a>
+                                            <a href="#" class="btn btn-outline-secondary disabled">淡雅粉红</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" 
+                                    src="https://img.alicdn.com/imgextra/i2/64853820/O1CN01iyYn831e5bXLZrRf0_!!64853820-0-daren.jpg_250x250xz.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            全绒时代 玫瑰花卷边毡帽</h5>
+                                        <p class="card-text">“帽子的款式简洁不失设计感。淡雅的纯色渲染显得温柔又慵懒。在表面增添了一朵同色系的立体玫瑰花的装饰，打破了纯色的单调，彰显出女性的妩媚与迷人之态。加之别致的卷边设计，层次感十足，更美观独特。”</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                       <a href="#" class="btn btn-outline-secondary btn-block">618抢购</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="https://img.alicdn.com/imgextra/i2/1830238467/O1CN01UdHr112CPw8CPZzzM_!!1830238467-0-daren.jpg_250x250xz.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">KENMONT 双层护耳针织帽</h5>
+                                        <p class="card-text">“一款kenmont儿童护耳针织帽，针织提花工艺制作不用担心图案花型会掉的问题。可爱的毛绒毛球设计，体现宝宝的活泼可爱一面，贴心的护耳设计为宝宝御寒保暖在寒冷的冬天带来一丝温暖。合理的颜色搭配让帽子不会显得单调，各色毛线织成的图案让帽子时尚有型。”</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block"> 618抢购</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="https://img.alicdn.com/imgextra/i1/2688727602/O1CN01U6hwMG261lSTpSFCW_!!2688727602-0-beehive-scenes.jpg_250x250xz.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">秋冬新款，文艺范绞花针织帽
+                                        </h5>
+                                        <p class="card-text">“保暖的针织帽，立体的绞花工艺，自然文艺，结合花瓣式的手工收顶，定制的金属标装饰点缀，提升时尚美观度。甄选优质的山羊绒，软糯的纱线，让温暖时刻相伴。”</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block disabled"> 暂时缺货</a>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="page navigation example">
+            <ul class="pagination d-flex justify-content-center mb-5">
+                <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                    <button type="button" class="btn btn-danger">save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 删除modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                    <button type="button" class="btn btn-danger">save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="all.js"></script>
+</body>
+
+</html>

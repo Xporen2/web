@@ -1,0 +1,35 @@
+
+
+
+.dropdown>button:focus{
+    box-shadow: 0 0 0 0rem !important;
+}
+.btn-cart{
+    background-color: transparent;
+    position: relative;
+}
+.dropdown .btn-cart .badge{
+    position:absolute;
+    top: -1px;
+    right: -1px;
+}
+.dropdown-menu-right{
+    right: 0px;
+    left: auto;
+}
+
+.jumbotron-bg{
+    background-image: url("https://images.unsplash.com/photo-1477901492169-d59e6428fc90?w=1350");
+    background-size: cover;
+    background-position:30% 57%; 
+    min-height:400px;
+}
+.bg-lighter{
+    background-color: rgba(255, 255, 255, .65);
+}
+.box-shadow{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .16);
+    transition: box-shadow .3s;
+
+}
+
